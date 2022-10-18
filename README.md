@@ -1,4 +1,4 @@
-# boolean-query-system
+# boolean-retrieval-system
 chinese boolean query system relies on MapReduce constructing indexes
 
 - 寻找一个中文数据集合（越大越好）
