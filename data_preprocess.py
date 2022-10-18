@@ -53,4 +53,4 @@ for index, row in tsv_file.iterrows():
     result.append((index, cleaned_list))
 
 with open('data/abstract.json', 'w') as f:
-    json.dump(result, f)
+    json.dump(result, f, indent=1)
