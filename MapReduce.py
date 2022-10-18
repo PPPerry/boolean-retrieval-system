@@ -3,14 +3,14 @@ import json
 class MapReduce:
     def __init__(self):
         self.intermediate = {}
-        self.result = []
+        self.result = {}
 
     def emit_intermediate(self, key, value):
         self.intermediate.setdefault(key, [])
         self.intermediate[key].append(value)
 
     def emit(self, value):
-        self.result.append(value) 
+        self.result[value[0]] = value[1]
 
     def execute(self, data, mapper, reducer):
         
